@@ -32,7 +32,17 @@ public class Gradebook {
     }
 
     public void printStudentInfo(String lastName) {
-        // Your code here
+        
+        for (int x=0;x<book.length;x++){
+            if(lastName.equals(book[x][0])){
+                System.out.print(book[x][1] + " " + book[x][0]);
+                for(int i =2;i<labels.length;x++){
+                    System.out.println(labels[i] + " - " + book[x][i]);
+                }
+            }
+        
+        }
+        
     }
 
 }
