@@ -35,7 +35,11 @@ public class Main {
 
         Gradebook testBook1 = new Gradebook(data1);
         Gradebook testBook2 = new Gradebook(data2);
+        testBook2.printStudentInfo("Bolkonskaya");
+        System.out.println("\n\n\n Student Avg Khereid: " + testBook1.findStudentAverage("Khereid"));
+        System.out.println("\n\n\n Test 1 avg: " + testBook1.findAssignmentAverage("Test1"));
+        testBook1.changeGrade("Khereid","Test1",100);
+        System.out.println("\n\n");
         testBook1.printStudentInfo("Khereid");
-        System.out.println("\n\n\n" + testBook1.findStudentAverage("Khereid"));
     }
 }
